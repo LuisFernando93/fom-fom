@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ac7977f78d950e46aa295973f12dc79
+guid: c58c5e7626966d640a7837024b950474
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: buttonMenu
+  - name: Carta - Deboche
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,9 +130,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 64
-      height: 16
-    spriteID: c6cb811bca754204f8ae8549ca4681a0
+      width: 86
+      height: 128
+    spriteID: 6e6d29f027275a04ead81770f24be216
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,24 +144,24 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1592976845
-    name: buttonMenu
+    guid: -1301367030
+    name: Carta - Deboche
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: buttonMenu
+    - name: Carta - Deboche
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 64
-        height: 16
-      spriteId: c6cb811bca754204f8ae8549ca4681a0
+        width: 86
+        height: 128
+      spriteId: 6e6d29f027275a04ead81770f24be216
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 16}
+  canvasSize: {x: 86, y: 128}

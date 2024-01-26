@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ac7977f78d950e46aa295973f12dc79
+guid: 063aa6df6c0f08a4f8f77dafa996ebf1
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: buttonMenu
+  - name: Carta - Vaiar
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,9 +130,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 64
-      height: 16
-    spriteID: c6cb811bca754204f8ae8549ca4681a0
+      width: 86
+      height: 128
+    spriteID: 394548e724f9c2943a307412a0c16988
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,24 +144,24 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1592976845
-    name: buttonMenu
+    guid: 305663777
+    name: Carta - Vaiar
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: buttonMenu
+    - name: Carta - Vaiar
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 64
-        height: 16
-      spriteId: c6cb811bca754204f8ae8549ca4681a0
+        width: 86
+        height: 128
+      spriteId: 394548e724f9c2943a307412a0c16988
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 16}
+  canvasSize: {x: 86, y: 128}

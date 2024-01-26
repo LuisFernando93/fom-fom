@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: be2350f0517babc43a563162951d09f3
+guid: 7ba18e7cc08b4b346a34fc80f575ca00
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: buttonMenuDarken
+  - name: Carta - Pensar
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,9 +130,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 64
-      height: 16
-    spriteID: e6f83aedeaddfeb46bc1cf443ddb55e9
+      width: 86
+      height: 128
+    spriteID: ca6f2bcb116fa934cb256ef6bc75881d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,24 +144,24 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 458256378
-    name: buttonMenuDarken
+    guid: 1066449391
+    name: Carta - Pensar
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: buttonMenuDarken
+    - name: Carta - Pensar
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 64
-        height: 16
-      spriteId: e6f83aedeaddfeb46bc1cf443ddb55e9
+        width: 86
+        height: 128
+      spriteId: ca6f2bcb116fa934cb256ef6bc75881d
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 16}
+  canvasSize: {x: 86, y: 128}
