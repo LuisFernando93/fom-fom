@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
-  m_Name: Insulto
+  m_Name: Fom Fom
   m_EditorClassIdentifier: 
-  artwork: {fileID: 1592356188, guid: 75246fc678dffa74e804484e2cf394ac, type: 3}
-  cardName: Insulto
-  id: 1
-  cardType: 1
-  power: 5
+  artwork: {fileID: 3303109132722391795, guid: c5b3fcac7495f3746932aa8f05c3b403, type: 3}
+  cardName: Fom Fom
+  id: 2
+  cardType: 0
+  power: 10

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
-  m_Name: Torta
+  m_Name: Pensar
   m_EditorClassIdentifier: 
-  artwork: {fileID: 99718860, guid: 75246fc678dffa74e804484e2cf394ac, type: 3}
-  cardName: Torta
+  artwork: {fileID: 0}
+  cardName: 
   id: 0
   cardType: 0
-  power: 20
+  power: 0
