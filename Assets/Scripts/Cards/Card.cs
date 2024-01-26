@@ -1,15 +1,39 @@
-public class Card
-{
-    private string cardName;
-    private int cardId;
-    private CardType cardType;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-    public Card(string cardName, int cardId, CardType cardType)
+[CreateAssetMenu(fileName = "New Card", menuName = "Card Template")]
+public class Card: ScriptableObject
+{
+    [SerializeField] private Sprite artwork;
+    [SerializeField] private string cardName;
+    [SerializeField] private int id;
+    [SerializeField] private CardType cardType;
+    [SerializeField] private int power;
+
+    public Sprite getArtwork()
     {
-        this.cardName = cardName;
-        this.cardId = cardId;
-        this.cardType = cardType;
+        return this.artwork; 
     }
 
-    
+    public string getCardName()
+    {
+        return this.cardName;
+    }
+
+    public int getId()
+    {
+        return this.id;
+    }
+
+    public CardType getCardType()
+    {
+        return this.cardType;
+    }
+
+    public int getPower()
+    {
+        return this.power; 
+    }
+
 }

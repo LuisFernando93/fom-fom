@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1252aa22f3d138343b5650b105b11b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Insulto
   m_EditorClassIdentifier: 
-  artwork: {fileID: 1592356188, guid: 75246fc678dffa74e804484e2cf394ac, type: 3}
+  artwork: {fileID: 0}
   cardName: Insulto
   id: 1
-  type: 1
+  cardType: 1
+  power: 5
