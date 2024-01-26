@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Torta
   m_EditorClassIdentifier: 
-  artwork: {fileID: 0}
+  artwork: {fileID: 99718860, guid: 75246fc678dffa74e804484e2cf394ac, type: 3}
   cardName: Torta
   id: 0
   cardType: 0
