@@ -1997,6 +1997,7 @@ GameObject:
   - component: {fileID: 1691169671}
   - component: {fileID: 1691169674}
   - component: {fileID: 1691169673}
+  - component: {fileID: 1691169675}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -2097,6 +2098,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nHandCards: 4
+--- !u!95 &1691169675
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691169670}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 761ba1d81c71ff54e95db748d8d7e0a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1769664281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4529476153328617312, guid: 59197cff9bfa6b748b40efc99e438eff, type: 3}
