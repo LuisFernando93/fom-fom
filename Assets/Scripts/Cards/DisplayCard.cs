@@ -23,7 +23,6 @@ public class DisplayCard : MonoBehaviour
     public void DisplayHandInUI()
     {
         cards = player.GetComponent<HandCards>().getHand();
-        Debug.Log(cards.Count);
         display1.GetComponent<Image>().sprite = cards[0].getArtwork();
         display2.GetComponent<Image>().sprite = cards[1].getArtwork();
         display3.GetComponent<Image>().sprite = cards[2].getArtwork();
