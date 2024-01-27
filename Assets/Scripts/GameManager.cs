@@ -50,7 +50,6 @@ public class GameManager : MonoBehaviour
                 break;
             case "redraw":
                 redrawPhase();
-                BattlePhaseManager.Instance.nextPhase();
                 break;
             default:
                 Debug.Log("Erro na transicao de turno");
@@ -87,6 +86,7 @@ public class GameManager : MonoBehaviour
     private void redrawPhase()
     {
         round++;
+        Debug.Log("Round: " + round);
         playerHandUI.SetActive(false);
         enemy.GetComponent<HandCards>().drawHand();
         player.GetComponent<HandCards>().drawHand();
