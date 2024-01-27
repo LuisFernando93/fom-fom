@@ -9,6 +9,7 @@ public class DisplayCard : MonoBehaviour
     private List<Card> cards;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject display1, display2, display3, display4;
+    [SerializeField] private GameObject gameManager;
     private Card selectedCard = null;
 
     public void cardClick(int cardIndex)
@@ -35,6 +36,7 @@ public class DisplayCard : MonoBehaviour
     {
         if (selectedCard != null)
         {
+            gameManager.GetComponent<GameManager>().setPlayerCard(selectedCard);
             BattlePhaseManager.Instance.nextPhase();
             //selectedCard = null;
         }

@@ -6,7 +6,6 @@ public class BattlePhaseManager : MonoBehaviour
 {
     public static BattlePhaseManager Instance;
     private string phase;
-    [SerializeField] private GameObject playerHandUI;
 
     private void Awake()
     {
@@ -26,32 +25,6 @@ public class BattlePhaseManager : MonoBehaviour
     {
         phase = "selection";
         Debug.Log(phase);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        switch (phase)
-        {
-            case "selection":
-                playerHandUI.SetActive(true);
-                break;
-            case "show":
-                playerHandUI.SetActive(false);
-                break;
-            case "animate":
-                playerHandUI.SetActive(false);
-                break;
-            case "score":
-                playerHandUI.SetActive(false);
-                break;
-            case "redraw":
-                playerHandUI.SetActive(false);
-                break;
-            default:
-                Debug.Log("Erro na transicao de turno");
-                break;
-        }
     }
 
     public void nextPhase()
@@ -78,5 +51,10 @@ public class BattlePhaseManager : MonoBehaviour
                 break;
         }
         Debug.Log(phase);
+    }
+
+    public string getCurrentPhase()
+    {
+        return phase;
     }
 }
