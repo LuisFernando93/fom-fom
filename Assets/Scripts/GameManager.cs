@@ -45,8 +45,7 @@ public class GameManager : MonoBehaviour
                 BattlePhaseManager.Instance.nextPhase();
                 break;
             case "score":
-                playerHandUI.SetActive(false);
-                BattlePhaseManager.Instance.nextPhase();
+                redrawPhase();
                 break;
             case "redraw":
                 playerHandUI.SetActive(false);
@@ -86,7 +85,10 @@ public class GameManager : MonoBehaviour
 
     private void redrawPhase()
     {
-
+        playerHandUI.SetActive(false);
+        enemy.GetComponent<HandCards>().drawHand();
+        player.GetComponent<HandCards>().drawHand();
+        BattlePhaseManager.Instance.nextPhase();
     }
 
     private void checkRound()
