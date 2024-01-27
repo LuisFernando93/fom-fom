@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
         playerHandUI.SetActive(false);
         showSelectedCardsUI.SetActive(true);
         playerDisplay.GetComponent<Image>().sprite = playerCard.getArtwork();
+        enemyDisplay.GetComponent<Image>().sprite = enemyCard.getArtwork();
         yield return new WaitForSeconds(5);
         showSelectedCardsUI.SetActive(false);
         BattlePhaseManager.Instance.nextPhase();
