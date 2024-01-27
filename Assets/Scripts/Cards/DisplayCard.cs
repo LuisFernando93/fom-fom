@@ -9,6 +9,7 @@ public class DisplayCard : MonoBehaviour
     private List<Card> cards;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject display1, display2, display3, display4;
+    [SerializeField] private AudioClip[] crowd;
 
     private void Start()
     {
@@ -47,6 +48,8 @@ public class DisplayCard : MonoBehaviour
                     break;
                 case 2:
                     Debug.Log(" teste2.");
+                    SoundManager.Instance.PlaySFX(crowd[0]);
+
                     break;
                 case 3:
                     Debug.Log(" teste3.");
