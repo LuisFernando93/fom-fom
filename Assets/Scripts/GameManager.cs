@@ -45,12 +45,11 @@ public class GameManager : MonoBehaviour
                 BattlePhaseManager.Instance.nextPhase();
                 break;
             case "score":
-                redrawPhase();
+                playerHandUI.SetActive(false);
+                BattlePhaseManager.Instance.nextPhase();
                 break;
             case "redraw":
-                playerHandUI.SetActive(false);
-                round++;
-                Debug.Log("Round: " + round);
+                redrawPhase();
                 BattlePhaseManager.Instance.nextPhase();
                 break;
             default:
@@ -83,8 +82,11 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
+
+
     private void redrawPhase()
     {
+        round++;
         playerHandUI.SetActive(false);
         enemy.GetComponent<HandCards>().drawHand();
         player.GetComponent<HandCards>().drawHand();

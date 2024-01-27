@@ -2743,6 +2743,14 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 2763135127708449212, guid: 76213eced55b641489628c4b52754303, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1691169670}
+    - target: {fileID: 2763135127708449212, guid: 76213eced55b641489628c4b52754303, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1567652762}
+    - target: {fileID: 2763135127708449212, guid: 76213eced55b641489628c4b52754303, type: 3}
       propertyPath: enemyDisplay
       value: 
       objectReference: {fileID: 1769664281}
