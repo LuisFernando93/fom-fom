@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: 2127770714707967890, guid: 3d2d2d1dde56d2d4c9e024977b6fc27b, type: 3}
   cardName: Timeout
+  cardDescription: "Respire fundo e se prepare para o espet\xE1culo com um caf\xE9zinho.
+    Ap\xF3s 2 turnos, todos os seus ataques aumentam em +10 a aprova\xE7\xE3o do
+    p\xFAblico, at\xE9 o fim do combate. Tome dano dobrado no turno que jogar essa
+    carta."
   id: 9
   cardType: 2
   power: 0

@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: -1287663780818988022, guid: 076d3b901e638c34f9ac4ff099400cc5, type: 3}
   cardName: Piada
+  cardDescription: "Fa\xE7a uma simples piada. A aprova\xE7\xE3o do p\xFAblico aumenta
+    em 10."
   id: 2
   cardType: 0
   power: 10

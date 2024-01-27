@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: -1484899565708348698, guid: 6d4e29440b5e8e742a0b81f746dfb51b, type: 3}
   cardName: Torta
+  cardDescription: "Cl\xE1ssico, sempre faz a plateia rir. Jogue uma torta na sua
+    cara. A aprova\xE7\xE3o do p\xFAblico aumenta em 20."
   id: 3
   cardType: 0
   power: 20

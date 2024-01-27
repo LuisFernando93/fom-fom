@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: -3657390260693935604, guid: cff66c7938d75e84f9a5661145e5c8a5, type: 3}
   cardName: Balance
+  cardDescription: "Equilibre-se na bola. A barra de aprova\xE7\xE3o volta a como
+    estava no in\xEDcio. Perfeitamente balanceada."
   id: 8
   cardType: 2
   power: 0

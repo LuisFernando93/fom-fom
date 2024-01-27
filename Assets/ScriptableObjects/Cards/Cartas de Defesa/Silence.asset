@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: 6776415430957934786, guid: b652dbf7977ee514f894bd842d56f728, type: 3}
   cardName: Silencio
+  cardDescription: "A piada do seu oponente foi t\xE3o ruim que a plateia ficou em
+    um sil\xEAncio constrangedor... A pr\xF3xima carta do seu oponente n\xE3o tem
+    efeito."
   id: 6
   cardType: 1
   power: 0
