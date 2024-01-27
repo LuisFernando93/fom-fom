@@ -57,4 +57,9 @@ public class BattlePhaseManager : MonoBehaviour
     {
         return phase;
     }
+
+    public void DestroyThis()
+    {
+        Destroy(this);
+    }
 }

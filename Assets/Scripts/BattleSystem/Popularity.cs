@@ -17,6 +17,19 @@ public class Popularity : MonoBehaviour
         popularityScore = 0;
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        PopularityBoundaries();
+
+        popularitySlider.value = popularityScore;
+    }
+
+    public int getPopularityScore()
+    {
+        return popularityScore;
+    }
+
     public void AddPlayerPopularity(int score)
     {
         popularityScore += score;
@@ -38,19 +51,5 @@ public class Popularity : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.Q))
-        {
-            AddPlayerPopularity(20);
-        } else if (Input.GetKeyUp(KeyCode.E))
-        {
-            AddEnemyPopularity(20);
-        }
-
-        PopularityBoundaries();
-
-        popularitySlider.value = popularityScore;
-    }
+    
 }
