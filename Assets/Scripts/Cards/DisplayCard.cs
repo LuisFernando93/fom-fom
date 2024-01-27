@@ -9,75 +9,13 @@ public class DisplayCard : MonoBehaviour
     private List<Card> cards;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject display1, display2, display3, display4;
+    [SerializeField] private GameObject gameManager;
+    private Card selectedCard = null;
 
-    private void Start()
+    public void cardClick(int cardIndex)
     {
-        AddClickEvent(display1, 0);
-        AddClickEvent(display2, 1);
-        AddClickEvent(display3, 2);
-        AddClickEvent(display4, 3);
-    }
-
-        void AddClickEvent(GameObject cardDisplay, int cardIndex)
-    {
-
-        Button button = cardDisplay.GetComponent<Button>();
-        if (button == null)
-        {
-            button = cardDisplay.AddComponent<Button>();
-        }
-
-        button.onClick.AddListener(() => OnCardClick(cardIndex));
-    }
-
-        void OnCardClick(int cardIndex)
-    {
-
-        if (cardIndex >= 0 && cardIndex < cards.Count)
-        {
-            int cardID = cards[cardIndex].getId();
-
-            switch (cardID)
-            {
-                case 0:
-                    Debug.Log(" teste0.");
-                    break;
-                case 1:
-                    Debug.Log(" teste1.");
-                    break;
-                case 2:
-                    Debug.Log(" teste2.");
-                    break;
-                case 3:
-                    Debug.Log(" teste3.");
-                    break;
-                case 4:
-                    Debug.Log(" teste4.");
-                    break;
-                case 5:
-                    Debug.Log(" teste5.");
-                    break;
-                case 6:
-                    Debug.Log(" teste6.");
-                    break;
-                case 7:
-                    Debug.Log(" teste7.");
-                    break;
-                case 8:
-                    Debug.Log(" teste8.");
-                    break;
-                case 9:
-                    Debug.Log(" teste9.");
-                    break;
-                case 10:
-                    Debug.Log(" teste10.");
-                    break;
-
-                default:
-                    Debug.Log("esse ID não existe");
-                    break;
-            }
-        }
+        selectedCard = cards[cardIndex];
+        Debug.Log(selectedCard.getId());
     }
 
     void Update()
@@ -93,5 +31,16 @@ public class DisplayCard : MonoBehaviour
         display3.GetComponent<Image>().sprite = cards[2].getArtwork();
         display4.GetComponent<Image>().sprite = cards[3].getArtwork();
     }
+
+    public void EndTurn()
+    {
+        if (selectedCard != null)
+        {
+            gameManager.GetComponent<GameManager>().setPlayerCard(selectedCard);
+            BattlePhaseManager.Instance.nextPhase();
+            //selectedCard = null;
+        }
+    }
+
 
 }

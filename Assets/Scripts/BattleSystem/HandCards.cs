@@ -19,6 +19,11 @@ public class HandCards : MonoBehaviour
         return cards;
     }
 
+    public Card getRandomCard()
+    {
+        return cards[Random.Range(0,nHandCards)];
+    }
+
     public void drawHand()
     {
         cards = new List<Card>();
