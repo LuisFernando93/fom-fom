@@ -45,8 +45,7 @@ public class GameManager : MonoBehaviour
                 BattlePhaseManager.Instance.nextPhase();
                 break;
             case "score":
-                playerHandUI.SetActive(false);
-                BattlePhaseManager.Instance.nextPhase();
+                scorePhase();
                 break;
             case "redraw":
                 redrawPhase();
@@ -81,7 +80,13 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
-
+    private void scorePhase()
+    {
+        playerHandUI.SetActive(false);
+        popularityBar.GetComponent<Popularity>().AddPlayerPopularity(playerCard.getPower());
+        popularityBar.GetComponent<Popularity>().AddEnemyPopularity(enemyCard.getPower());
+        BattlePhaseManager.Instance.nextPhase();
+    }
 
     private void redrawPhase()
     {
