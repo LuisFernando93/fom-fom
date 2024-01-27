@@ -5,7 +5,8 @@ using UnityEngine;
 public class CardDatabase : MonoBehaviour
 {
     [SerializeField] private List<Card> cardObjects;
-    public static List<Card> cardList = new List<Card> ();
+    public static List<Card> cardList = new List<Card>();
+    public static int nCardList { get; private set; }
 
 
     private void Awake()
@@ -14,5 +15,19 @@ public class CardDatabase : MonoBehaviour
         {
             cardList.Add (card);
         }
+
+        nCardList = cardList.Count;
+    }
+
+    public static Card findCardById(int id)
+    {
+        foreach (Card card in CardDatabase.cardList)
+        {
+            if (card.getId() == id)
+            {
+                return card;
+            }
+        }
+        return null;
     }
 }

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
-  m_Name: Ignorar
+  m_Name: Boh
   m_EditorClassIdentifier: 
-  artwork: {fileID: -2898859249242349822, guid: 4fdd7624d789dc34a89f8e1cf84f4ef8, type: 3}
-  cardName: Ignorar
-  id: 6
+  artwork: {fileID: 0}
+  cardName: Vaiar
+  id: 7
   cardType: 1
   power: 0

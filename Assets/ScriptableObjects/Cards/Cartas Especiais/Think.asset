@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
-  m_Name: Silencio
+  m_Name: Think
   m_EditorClassIdentifier: 
   artwork: {fileID: 0}
-  cardName: Silencio
-  id: 0
-  cardType: 0
+  cardName: 
+  id: 10
+  cardType: 2
   power: 0
