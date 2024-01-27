@@ -15,5 +15,6 @@ MonoBehaviour:
   artwork: {fileID: 6776415430957934786, guid: b652dbf7977ee514f894bd842d56f728, type: 3}
   cardName: Silencio
   id: 6
-  cardType: 0
+  cardType: 1
   power: 0
+  cost: 3

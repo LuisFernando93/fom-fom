@@ -41,4 +41,10 @@ public class HandCards : MonoBehaviour
             cards.Add(card);
         }
     }
+
+    public void SkipTurn(){
+        cards.Clear();
+
+        drawHand();
+    }
 }
