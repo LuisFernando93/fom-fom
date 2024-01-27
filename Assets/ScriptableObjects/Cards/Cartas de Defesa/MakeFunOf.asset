@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: 7210074973627951345, guid: c58c5e7626966d640a7837024b950474, type: 3}
   cardName: Deboche
+  cardDescription: "Deboche da piada feita pelo seu oponente. Voc\xEA anula o pr\xF3ximo
+    ataque recebido."
   id: 4
   cardType: 1
   power: 5

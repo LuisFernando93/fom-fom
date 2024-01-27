@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: 3303109132722391795, guid: c5b3fcac7495f3746932aa8f05c3b403, type: 3}
   cardName: Fom Fom
+  cardDescription: "Uma boa e bela apertada no nariz. A aprova\xE7\xE3o do p\xFAblico
+    aumenta em 10 no in\xEDcio de cada rodada. Dura 3 turnos."
   id: 0
   cardType: 0
   power: 10

@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: -1961863254796558745, guid: 7ba18e7cc08b4b346a34fc80f575ca00, type: 3}
   cardName: Think
+  cardDescription: "Pense calmamente na pr\xF3xima fa\xE7anha que ir\xE1 realizar.
+    A carta que voc\xEA jogar esse turno aparecer\xE1 na sua m\xE3o novamente no
+    pr\xF3ximo."
   id: 10
   cardType: 2
   power: 0

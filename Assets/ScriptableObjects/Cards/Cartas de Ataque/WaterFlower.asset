@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: -4945188742335026141, guid: 1189284b5bdfd17489884c38aef2b840, type: 3}
   cardName: Jato D'Agua
+  cardDescription: "Cl\xE1ssico truque de palha\xE7o. Jogue um jato de \xE1gua bem
+    na cara do seu oponente. A aprova\xE7\xE3o do p\xFAblico aumenta em 10 e seu
+    oponente n\xE3o ir\xE1 receber uma carta de defesa no pr\xF3ximo turno."
   id: 1
   cardType: 0
   power: 10
