@@ -12,7 +12,72 @@ public class DisplayCard : MonoBehaviour
 
     private void Start()
     {
+        AddClickEvent(display1, 0);
+        AddClickEvent(display2, 1);
+        AddClickEvent(display3, 2);
+        AddClickEvent(display4, 3);
+    }
 
+        void AddClickEvent(GameObject cardDisplay, int cardIndex)
+    {
+
+        Button button = cardDisplay.GetComponent<Button>();
+        if (button == null)
+        {
+            button = cardDisplay.AddComponent<Button>();
+        }
+
+        button.onClick.AddListener(() => OnCardClick(cardIndex));
+    }
+
+        void OnCardClick(int cardIndex)
+    {
+
+        if (cardIndex >= 0 && cardIndex < cards.Count)
+        {
+            int cardID = cards[cardIndex].getId();
+
+            switch (cardID)
+            {
+                case 0:
+                    Debug.Log(" teste0.");
+                    break;
+                case 1:
+                    Debug.Log(" teste1.");
+                    break;
+                case 2:
+                    Debug.Log(" teste2.");
+                    break;
+                case 3:
+                    Debug.Log(" teste3.");
+                    break;
+                case 4:
+                    Debug.Log(" teste4.");
+                    break;
+                case 5:
+                    Debug.Log(" teste5.");
+                    break;
+                case 6:
+                    Debug.Log(" teste6.");
+                    break;
+                case 7:
+                    Debug.Log(" teste7.");
+                    break;
+                case 8:
+                    Debug.Log(" teste8.");
+                    break;
+                case 9:
+                    Debug.Log(" teste9.");
+                    break;
+                case 10:
+                    Debug.Log(" teste10.");
+                    break;
+
+                default:
+                    Debug.Log("esse ID não existe");
+                    break;
+            }
+        }
     }
 
     void Update()

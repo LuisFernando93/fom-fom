@@ -17,3 +17,4 @@ MonoBehaviour:
   id: 3
   cardType: 0
   power: 20
+  cost: 2

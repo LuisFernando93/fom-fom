@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Timeout
   m_EditorClassIdentifier: 
-  artwork: {fileID: 0}
-  cardName: Intervalo
+  artwork: {fileID: 2127770714707967890, guid: 3d2d2d1dde56d2d4c9e024977b6fc27b, type: 3}
+  cardName: Timeout
   id: 9
   cardType: 2
   power: 0
+  cost: 3

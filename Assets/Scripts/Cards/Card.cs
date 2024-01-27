@@ -7,9 +7,12 @@ public class Card: ScriptableObject
 {
     [SerializeField] private Sprite artwork;
     [SerializeField] private string cardName;
+    [SerializeField] private string cardDescription;
     [SerializeField] private int id;
     [SerializeField] private CardType cardType;
     [SerializeField] private int power;
+
+    [SerializeField] private int cost;
 
     public Sprite getArtwork()
     {
@@ -19,6 +22,11 @@ public class Card: ScriptableObject
     public string getCardName()
     {
         return this.cardName;
+    }
+
+    public string getCardDescription()
+    {
+        return this.cardDescription;
     }
 
     public int getId()
@@ -34,6 +42,11 @@ public class Card: ScriptableObject
     public int getPower()
     {
         return this.power; 
+    }
+
+    public int getCost()
+    {
+        return this.cost;
     }
 
 }
