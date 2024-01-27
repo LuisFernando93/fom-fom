@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
-  m_Name: Pensar
+  m_Name: WaterFlower
   m_EditorClassIdentifier: 
-  artwork: {fileID: 0}
-  cardName: 
-  id: 0
+  artwork: {fileID: -4945188742335026141, guid: 1189284b5bdfd17489884c38aef2b840, type: 3}
+  cardName: Jato D'Agua
+  id: 1
   cardType: 0
-  power: 0
+  power: 10

@@ -1,31 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DisplayCard : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        int id = Random.Range(0, 3);
-        Card card = findCardById(id);
+    private List<Card> cards;
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject display1, display2, display3, display4;
 
-        if (card != null)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = card.getArtwork();
-        }
+    private void Start()
+    {
+
     }
 
-    public Card findCardById(int id)
+    void Update()
     {
-        foreach (Card card in CardDatabase.cardList)
-        {
-            if (card.getId() == id)
-            {
-                return card;
-            }
-        }
-        return null;
+        DisplayHandInUI();
+    }
+
+    public void DisplayHandInUI()
+    {
+        cards = player.GetComponent<HandCards>().getHand();
+        Debug.Log(cards.Count);
+        display1.GetComponent<Image>().sprite = cards[0].getArtwork();
+        display2.GetComponent<Image>().sprite = cards[1].getArtwork();
+        display3.GetComponent<Image>().sprite = cards[2].getArtwork();
+        display4.GetComponent<Image>().sprite = cards[3].getArtwork();
     }
 
 }

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
-  m_Name: Piada
+  m_Name: Silence
   m_EditorClassIdentifier: 
-  artwork: {fileID: -1287663780818988022, guid: 076d3b901e638c34f9ac4ff099400cc5, type: 3}
-  cardName: Piada
-  id: 3
+  artwork: {fileID: 6776415430957934786, guid: b652dbf7977ee514f894bd842d56f728, type: 3}
+  cardName: Silencio
+  id: 6
   cardType: 0
-  power: 10
+  power: 0
