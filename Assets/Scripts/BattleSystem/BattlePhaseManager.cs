@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BattlePhaseManager : MonoBehaviour
 {
-    public BattlePhaseManager Instance;
+    public static BattlePhaseManager Instance;
     private string phase;
-    private GameObject playerHandUI;
+    [SerializeField] private GameObject playerHandUI;
 
     private void Awake()
     {
@@ -25,6 +25,7 @@ public class BattlePhaseManager : MonoBehaviour
     void Start()
     {
         phase = "selection";
+        Debug.Log(phase);
     }
 
     // Update is called once per frame
@@ -51,5 +52,31 @@ public class BattlePhaseManager : MonoBehaviour
                 Debug.Log("Erro na transicao de turno");
                 break;
         }
+    }
+
+    public void nextPhase()
+    {
+        switch (phase)
+        {
+            case "selection":
+                phase = "show";
+                break;
+            case "show":
+                phase = "animate";
+                break;
+            case "animate":
+                phase = "score";
+                break;
+            case "score":
+                phase = "redraw";
+                break;
+            case "redraw":
+                phase = "selection";
+                break;
+            default:
+                Debug.Log("Erro na transicao de turno");
+                break;
+        }
+        Debug.Log(phase);
     }
 }

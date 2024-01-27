@@ -35,7 +35,8 @@ public class DisplayCard : MonoBehaviour
     {
         if (selectedCard != null)
         {
-
+            BattlePhaseManager.Instance.nextPhase();
+            //selectedCard = null;
         }
     }
 
