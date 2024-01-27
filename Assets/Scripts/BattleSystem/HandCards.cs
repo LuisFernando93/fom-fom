@@ -21,6 +21,7 @@ public class HandCards : MonoBehaviour
 
     public void drawHand()
     {
+        cards = new List<Card>();
         for (int i = 0; i < nHandCards; i++)
         {
             drawCard();
