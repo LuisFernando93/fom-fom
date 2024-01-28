@@ -41,8 +41,7 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "animate":
-                playerHandUI.SetActive(false);
-                BattlePhaseManager.Instance.nextPhase();
+                animatePhase();
                 break;
             case "score":
                 scorePhase();
@@ -78,6 +77,13 @@ public class GameManager : MonoBehaviour
         BattlePhaseManager.Instance.nextPhase();
         isShowing = false;
         yield break;
+    }
+
+    private void animatePhase()
+    {
+        playerHandUI.SetActive(false);
+        //player.GetComponent<Player>
+        BattlePhaseManager.Instance.nextPhase();
     }
 
     private void scorePhase()

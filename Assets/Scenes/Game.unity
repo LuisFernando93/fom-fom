@@ -1470,6 +1470,7 @@ GameObject:
   - component: {fileID: 1567652764}
   - component: {fileID: 1567652763}
   - component: {fileID: 1567652765}
+  - component: {fileID: 1567652767}
   - component: {fileID: 1567652766}
   m_Layer: 0
   m_Name: Player
@@ -1579,6 +1580,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nHandCards: 4
+--- !u!114 &1567652767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567652762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112b0f5a0339e6947b6158a5677cddba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1608562744
 GameObject:
   m_ObjectHideFlags: 0
