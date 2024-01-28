@@ -9,7 +9,7 @@ public class Victory : MonoBehaviour
 
     private void Awake()
     {
-        SoundManager.Instance.PlayMusic(musica);
+        SoundManager.Instance.PlaySFX(musica);
     }
 
     public void BackToMenu()
