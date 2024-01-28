@@ -7,7 +7,7 @@ public class GameOver : MonoBehaviour
 {
     public AudioClip musica;
 
-    private void Awake()
+    private void Start()
     {
         SoundManager.Instance.PlaySFX(musica);
     }
