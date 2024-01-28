@@ -456,7 +456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Voltar
+  m_text: 'Sair
 
 '
   m_isRightToLeft: 0
@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 1829951112}
   - component: {fileID: 1829951111}
   m_Layer: 5
-  m_Name: BackButton
+  m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
