@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Victory : MonoBehaviour
 {
+    public AudioClip musica;
+
+    private void Awake()
+    {
+        SoundManager.Instance.PlayMusic(musica);
+    }
+
     public void BackToMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        Application.Quit();
     }
 }
