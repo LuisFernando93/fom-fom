@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Think
   m_EditorClassIdentifier: 
-  artwork: {fileID: -1961863254796558745, guid: 7ba18e7cc08b4b346a34fc80f575ca00, type: 3}
+  artwork: {fileID: 21300000, guid: 5b524682151f00449a019f4358604853, type: 3}
   cardName: Think
   cardDescription: "Pense calmamente na pr\xF3xima fa\xE7anha que ir\xE1 realizar.
     A carta que voc\xEA jogar esse turno aparecer\xE1 na sua m\xE3o novamente no

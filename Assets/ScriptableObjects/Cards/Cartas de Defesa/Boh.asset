@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Boh
   m_EditorClassIdentifier: 
-  artwork: {fileID: -2091733707341840849, guid: 063aa6df6c0f08a4f8f77dafa996ebf1, type: 3}
+  artwork: {fileID: 21300000, guid: 5bfdece9875b776489a43c2bd3be1b1a, type: 3}
   cardName: Boh
   cardDescription: "Promove uma chuva de vaias ao seu oponente. No pr\xF3ximo turno,
     os ataques do oponente s\xE3o reduzidos pela metade."

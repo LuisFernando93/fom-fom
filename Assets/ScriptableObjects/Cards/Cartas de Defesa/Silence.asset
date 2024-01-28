@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Silence
   m_EditorClassIdentifier: 
-  artwork: {fileID: 6776415430957934786, guid: b652dbf7977ee514f894bd842d56f728, type: 3}
+  artwork: {fileID: 21300000, guid: b3ea869e1f6a8dc4784aada538ede0f7, type: 3}
   cardName: Silencio
   cardDescription: "A piada do seu oponente foi t\xE3o ruim que a plateia ficou em
     um sil\xEAncio constrangedor... A pr\xF3xima carta do seu oponente n\xE3o tem

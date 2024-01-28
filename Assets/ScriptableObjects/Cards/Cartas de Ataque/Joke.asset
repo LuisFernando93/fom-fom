@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Joke
   m_EditorClassIdentifier: 
-  artwork: {fileID: -1287663780818988022, guid: 076d3b901e638c34f9ac4ff099400cc5, type: 3}
+  artwork: {fileID: 21300000, guid: f51ef1f8b5e0c5b4391acde80d64d8e8, type: 3}
   cardName: Piada
   cardDescription: "Fa\xE7a uma simples piada. A aprova\xE7\xE3o do p\xFAblico aumenta
     em 10."

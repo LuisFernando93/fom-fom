@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Timeout
   m_EditorClassIdentifier: 
-  artwork: {fileID: 2127770714707967890, guid: 3d2d2d1dde56d2d4c9e024977b6fc27b, type: 3}
+  artwork: {fileID: 21300000, guid: 70985acf27039394caa9e3b5f7f3bad7, type: 3}
   cardName: Timeout
   cardDescription: "Respire fundo e se prepare para o espet\xE1culo com um caf\xE9zinho.
     Ap\xF3s 2 turnos, todos os seus ataques aumentam em +10 a aprova\xE7\xE3o do

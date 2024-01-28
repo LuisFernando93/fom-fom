@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e657c23e5d3f5064fb1725ac6f99edd8, type: 3}
   m_Name: Pie
   m_EditorClassIdentifier: 
-  artwork: {fileID: -1484899565708348698, guid: 6d4e29440b5e8e742a0b81f746dfb51b, type: 3}
+  artwork: {fileID: 21300000, guid: 4c780ba6fac0d5e439c79adb2b659d37, type: 3}
   cardName: Torta
   cardDescription: "Cl\xE1ssico, sempre faz a plateia rir. Jogue uma torta na sua
     cara. A aprova\xE7\xE3o do p\xFAblico aumenta em 20."
