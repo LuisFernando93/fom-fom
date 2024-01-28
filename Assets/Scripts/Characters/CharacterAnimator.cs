@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterAnimator : MonoBehaviour
 {
+    [SerializeField] private AudioClip fomfom;
+    [SerializeField] private AudioClip flower;
     private Animator animator;
 
     private void Awake()
@@ -52,5 +54,15 @@ public class CharacterAnimator : MonoBehaviour
                 Debug.Log("Erro no codigo de animacao");
                 break;
         }
+    }
+
+    public void playfomfomSFX()
+    {
+        SoundManager.Instance.PlaySFX(fomfom);
+    }
+
+    public void playflowerSFX()
+    {
+        SoundManager.Instance.PlaySFX(flower);
     }
 }
