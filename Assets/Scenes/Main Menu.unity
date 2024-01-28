@@ -1594,6 +1594,7 @@ MonoBehaviour:
   _masterVolumeSlider: {fileID: 618095114}
   _musicVolumeSlider: {fileID: 1603474180}
   _SFXVolumeSlider: {fileID: 400466150}
+  _musicClip: {fileID: 8300000, guid: abda720f597de9d458caebfc7e221bf6, type: 3}
 --- !u!1 &824541325
 GameObject:
   m_ObjectHideFlags: 0
@@ -4143,7 +4144,7 @@ PrefabInstance:
     - target: {fileID: 8055551509849166601, guid: a2e5cf095e93def4596baa57d346b413, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: abda720f597de9d458caebfc7e221bf6, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8055551509849166601, guid: a2e5cf095e93def4596baa57d346b413, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1

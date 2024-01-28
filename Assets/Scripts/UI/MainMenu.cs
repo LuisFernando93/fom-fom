@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
+    [SerializeField] private AudioClip _musicClip;
 
     private void Start()
     {
+        SoundManager.Instance.PlayMusic(_musicClip);
         _masterVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("master");
         _musicVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("music");
         _SFXVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("SFX");
