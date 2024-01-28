@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public AudioClip musica;
+
+    private void Awake()
+    {
+        SoundManager.Instance.PlayMusic(musica);
+    }
+
     public void BackToMenu()
     {
         Application.Quit();
