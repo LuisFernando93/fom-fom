@@ -12,15 +12,19 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject playerDisplay, enemyDisplay;
     [SerializeField] private GameObject player, enemy;
     [SerializeField] private GameObject popularityBar;
+    [SerializeField] private GameObject crowd;
     private Card enemyCard, playerCard;
     private string phase;
     private int round;
     private bool isShowing = false;
+    private bool isAnimating = false;
 
     void Start()
     {
         SoundManager.Instance.PlayMusic(music);
         round = 1;
+        enemy.GetComponent<HandCards>().drawHand();
+        player.GetComponent<HandCards>().drawHand();
     }
 
     // Update is called once per frame
@@ -41,7 +45,11 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "animate":
-                animatePhase();
+                if(!isAnimating)
+                {
+                    StartCoroutine(animatePhase());
+                    isAnimating = true;
+                }
                 break;
             case "score":
                 scorePhase();
@@ -72,18 +80,24 @@ public class GameManager : MonoBehaviour
         showSelectedCardsUI.SetActive(true);
         playerDisplay.GetComponent<Image>().sprite = playerCard.getArtwork();
         enemyDisplay.GetComponent<Image>().sprite = enemyCard.getArtwork();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         showSelectedCardsUI.SetActive(false);
         BattlePhaseManager.Instance.nextPhase();
         isShowing = false;
         yield break;
     }
 
-    private void animatePhase()
+    private IEnumerator animatePhase()
     {
         playerHandUI.SetActive(false);
-        //player.GetComponent<Player>
+        player.GetComponent<CharacterAnimator>().playCardAnimation(playerCard);
+        enemy.GetComponent<CharacterAnimator>().playCardAnimation(enemyCard);
+        yield return new WaitForSeconds(2);
+        crowd.GetComponent<CrowdAnimator>().Laugh();
+        yield return new WaitForSeconds(1);
         BattlePhaseManager.Instance.nextPhase();
+        isAnimating = false;
+        yield break;
     }
 
     private void scorePhase()

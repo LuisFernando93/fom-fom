@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class CrowdAnimator : MonoBehaviour
 {
     private Animator animator;
 
@@ -12,9 +11,8 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Laugh()
     {
-        
+        animator.SetTrigger("laugh");
     }
 }
